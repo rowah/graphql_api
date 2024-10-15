@@ -18,6 +18,12 @@ defmodule MediumGraphqlApiWeb.Schema do
       arg(:user_input, non_null(:user_input_type))
       resolve(&Resolvers.UserResolver.create_user/3)
     end
+
+    @desc "Login a user and return a JWT token"
+    field :login_user, :session_type do
+      arg(:login_input, non_null(:session_input_type))
+      resolve(&Resolvers.SessionResolver.login_user/3)
+    end
   end
 
   # subscription do

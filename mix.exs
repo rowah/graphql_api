@@ -56,7 +56,8 @@ defmodule MediumGraphqlApi.MixProject do
       {:bandit, "~> 1.5"},
       {:bcrypt_elixir, "~> 3.2"},
       {:absinthe, "~> 1.7"},
-      {:absinthe_plug, "~> 1.5"}
+      {:absinthe_plug, "~> 1.5"},
+      {:guardian, "~> 2.3"}
       # {:absinthe_ecto, "~> 0.1"}
     ]
   end
